@@ -34,7 +34,7 @@ function createWindow (entryUrl) {
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
 
-  thisWindow.on('closed', function () {
+  thisWindow.on('closed', () => {
     // Dereference the window object
     windows.splice(index, 1)
   })
@@ -42,20 +42,16 @@ function createWindow (entryUrl) {
 
 function startApp() {
 
-  app.on('ready', function() {
-    createWindow()
-  })
+  app.on('ready', () => createWindow())
 
-  app.on('window-all-closed', function () {
+  app.on('window-all-closed', () => {
     if (process.platform !== 'darwin') {
       app.quit()
     }
   })
 
-  app.on('activate', function () {
-    if (!windows.length) {
-      createWindow()
-    }
+  app.on('activate', () => {
+    if (!windows.length) createWindow()
   })
 }
 

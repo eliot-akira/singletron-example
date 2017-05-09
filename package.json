@@ -1,13 +1,13 @@
 {
   "name": "singletron-example",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Minimal example of sharing a single instance of Electron",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
   "dependencies": {
-    "singletron": "0.0.1"
+    "singletron": "0.0.2"
   },
   "devDependencies": {
     "electron": "~1.6.2"
