@@ -1,6 +1,6 @@
 {
   "name": "singletron-example",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Minimal example of sharing a single instance of Electron",
   "main": "main.js",
   "scripts": {
