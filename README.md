@@ -26,4 +26,4 @@ They will connect with the first instance, and hand over the rest of the launch 
 
 ## How does it work?
 
-It uses `node-ipc` to communicate and negotiate between server/clients. See the bottom of [`main.js`](https://github.com/eliot-akira/singletron-example/blob/master/main.js#L62).
+It uses `node-ipc` to communicate and negotiate between server/clients. The IPC hub is a separate module called [`singletron`](https://github.com/eliot-akira/singletron). For the initialization step, see the bottom of [`main.js`](https://github.com/eliot-akira/singletron-example/blob/master/main.js#L62).
