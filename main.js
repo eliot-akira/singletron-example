@@ -31,9 +31,6 @@ function createWindow (entryUrl) {
     slashes: true
   }))
 
-  // Open the DevTools.
-  // mainWindow.webContents.openDevTools()
-
   thisWindow.on('closed', () => {
     // Dereference the window object
     windows.splice(index, 1)
