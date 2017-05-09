@@ -1,6 +1,6 @@
 {
   "name": "singletron-example",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Minimal example of sharing a single instance of Electron",
   "main": "main.js",
   "scripts": {
@@ -14,5 +14,5 @@
   },
   "repository": "https://github.com/eliot-akira/singletron-example",
   "author": "Eliot Akira",
-  "license": "CC0-1.0"
+  "license": "MIT"
 }
