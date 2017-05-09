@@ -14,8 +14,14 @@ let windows = []
 
 function createWindow (entryUrl) {
 
-  const thisWindow = new BrowserWindow({ width: 800, height: 600 })
   const index = windows.length
+  const thisWindow = new BrowserWindow({
+    width: 800,
+    height: 600,
+    // For demo purpose: offset windows so they don't overlap exactly
+    x: (index+1) * 100,
+    y: (index+1) * 100
+  })
 
   windows.push(thisWindow)
 

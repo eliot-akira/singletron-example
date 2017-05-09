@@ -18,10 +18,12 @@ npm start
 
 This starts an instance of the app, and listens for inter-process requests from other apps.
 
-Then, in another terminal window, start a second instance.
+Then, in another terminal window, start more instances.
 
 ```bash
 npm start
+npm start
+npm start
 ```
 
-It will connect with the first instance, and hand over the rest of the launch process by requesting a new window.
+They will connect with the first instance, and hand over the rest of the launch process by requesting new windows.
