@@ -1,5 +1,5 @@
 const electron = require('electron')
-const singletron = require('./singletron')
+const singletron = require('singletron')
 
 const app = electron.app
 const BrowserWindow = electron.BrowserWindow
@@ -85,7 +85,7 @@ singletron.createClient().then(({ client, config }) => {
 
     console.log('Singletron server started', config)
 
-    server.on('load', function(data, socket) {
+    server.on('load', (data, socket) => {
 
       console.log('Request for new window', data)
 

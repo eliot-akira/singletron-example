@@ -6,13 +6,9 @@ Minimal example of sharing a single instance of Electron
 ## See it in action
 
 ```bash
-# Clone this repository
 git clone https://github.com/eliot-akira/singletron-example
-# Go into the repository
 cd singletron-example
-# Install dependencies
 npm install
-# Run the app
 npm start
 ```
 
@@ -27,3 +23,7 @@ npm start
 ```
 
 They will connect with the first instance, and hand over the rest of the launch process by requesting new windows.
+
+## How does it work?
+
+It uses `node-ipc` to communicate and negotiate between server/clients. See the bottom of [`main.js`](https://github.com/eliot-akira/singletron-example/blob/master/main.js#L62).
