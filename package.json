@@ -7,7 +7,7 @@
     "start": "electron ."
   },
   "dependencies": {
-    "singletron": "0.0.3"
+    "singletron": "0.0.4"
   },
   "devDependencies": {
     "electron": "~1.6.2"
